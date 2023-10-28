@@ -11,14 +11,25 @@ Large Language Models (LLMs) have introduced a new era of proficiency in compreh
 ## ✅ Todo
 
 - [x] training scripts
-- [ ] training data
+- [x] training data
 - [ ] models
 
 ## 📚 Datasets
 
-- ChiMed-VL-Alignment
+Chinese Medicine - Vision Language Dataset (ChiMed-VL), the first large-scale Chinese Vision-Language dataset for general healthcare, designed to facilitate multistage training. This dataset has two subsets: vision-language feature alignment and instruction tuning.
 
-- ChiMed-VL-Instruction
+### ChiMed-VL-Alignment dataset
+ChiMed-VL-Alignment consists of 580,014 image-text couplings, each pair falling into one of two categories: context information of an image or descriptions of an image. The context category contains 167M tokens, presenting a median text length of 435 (Q1: 211, Q3: 757). Conversely, descriptions, more concise and image-specific, contain inline descriptions and captions. They comprise 63M tokens, with median lengths settling at 59 (Q1: 45, Q3: 83).
+
+### ChiMed-VL-Instruction dataset
+ChiMed-VL-Instruction comprises 469,441 question-answer pairs. Within this subset, the questions section contains 10M tokens with a median length of 20 (Q1: 16, Q3: 25), posing a concise inquiry reflective of medical queries. The answers consist of 13M tokens with a median length slightly longer at 22 (Q1: 12, Q3: 34), providing clear, direct, and informative responses.
+
+### Data Acquire
+Our prompt data is provided on HuggingFace and Baidu Yun.
+
+- HuggingFace: https://huggingface.co/datasets/williamliu/ChiMed-VL
+
+- Baidu Yun: https://pan.baidu.com/s/1TBwdKLZbaYIxZy_DLMZrXQ 提取码: fkma
 
 ## Acknowledgement
 
