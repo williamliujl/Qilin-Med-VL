@@ -10,7 +10,7 @@ Large Language Models (LLMs) have introduced a new era of proficiency in compreh
 
 ## ✅ Todo
 
-- [ ] training scripts
+- [x] training scripts
 - [ ] training data
 - [ ] models
 
