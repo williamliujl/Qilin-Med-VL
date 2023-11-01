@@ -31,6 +31,17 @@ Our prompt data is provided on HuggingFace and Baidu Yun.
 
 - Baidu Yun: https://pan.baidu.com/s/1TBwdKLZbaYIxZy_DLMZrXQ 提取码: fkma
 
+## Cite Us
+```
+@inproceedings{Liu2023QilinMedVLTC,
+  title={Qilin-Med-VL: Towards Chinese Large Vision-Language Model for General Healthcare},
+  author={Junling Liu and Ziming Wang and Qichen Ye and Dading Chong and Peilin Zhou and Yining Hua},
+  year={2023},
+  url={https://api.semanticscholar.org/CorpusID:264555208}
+}
+```
+
+
 ## Acknowledgement
 
 Many thanks to the following awesome works!
