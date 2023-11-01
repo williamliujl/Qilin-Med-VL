@@ -37,7 +37,7 @@ Our prompt data is provided on HuggingFace and Baidu Yun.
   title={Qilin-Med-VL: Towards Chinese Large Vision-Language Model for General Healthcare},
   author={Junling Liu and Ziming Wang and Qichen Ye and Dading Chong and Peilin Zhou and Yining Hua},
   year={2023},
-  url={https://api.semanticscholar.org/CorpusID:264555208}
+  url={https://arxiv.org/abs/2310.17956}
 }
 ```
 
