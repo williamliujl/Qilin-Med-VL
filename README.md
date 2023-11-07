@@ -31,6 +31,15 @@ Our prompt data is provided on HuggingFace and Baidu Yun.
 
 - Baidu Yun: https://pan.baidu.com/s/1TBwdKLZbaYIxZy_DLMZrXQ 提取码: fkma
 
+## 👨‍ Models
+
+### Model Access
+We have open-sourced the weights of the Qilin-Med-VL model, which can be downloaded through the following link.
+- HuggingFace: https://huggingface.co/williamliu/Qilin-Med-VL
+
+- Baidu Yun: https://pan.baidu.com/s/1lZs53EWb9kOtsIN5BB34Jw 提取码: muab 
+
+
 ## Cite Us
 ```
 @inproceedings{Liu2023QilinMedVLTC,
