@@ -13,7 +13,7 @@ Large Language Models (LLMs) have introduced a new era of proficiency in compreh
 - [x] training scripts
 - [x] training data
 - [x] models
-- [ ] downstream task validation
+- [ ] downstream task validation
 
 ## 📚 Datasets
 
