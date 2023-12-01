@@ -13,6 +13,8 @@ Large Language Models (LLMs) have introduced a new era of proficiency in compreh
 - [x] training scripts
 - [x] training data
 - [x] models
+    - [x] base model
+    - [x] chat model
 - [ ] downstream task validation
 
 ## 📚 Datasets
@@ -25,6 +27,9 @@ ChiMed-VL-Alignment consists of 580,014 image-text couplings, each pair falling 
 ### ChiMed-VL-Instruction dataset
 ChiMed-VL-Instruction comprises 469,441 question-answer pairs. Within this subset, the questions section contains 10M tokens with a median length of 20 (Q1: 16, Q3: 25), posing a concise inquiry reflective of medical queries. The answers consist of 13M tokens with a median length slightly longer at 22 (Q1: 12, Q3: 34), providing clear, direct, and informative responses.
 
+### ChiMed-VL-Chat dataset
+TODO
+
 ### Data Acquire
 Our prompt data is provided on HuggingFace and Baidu Yun.
 
@@ -36,10 +41,26 @@ Our prompt data is provided on HuggingFace and Baidu Yun.
 
 ### Model Access
 We have open-sourced the weights of the Qilin-Med-VL model, which can be downloaded through the following link.
+
+#### Base-Version
 - HuggingFace: https://huggingface.co/williamliu/Qilin-Med-VL
 
 - Baidu Yun: https://pan.baidu.com/s/1lZs53EWb9kOtsIN5BB34Jw 提取码: muab 
 
+#### Chat-Version
+- HuggingFace: https://huggingface.co/williamliu/Qilin-Med-VL-Chat
+
+
+## Demo
+
+You could interact with the Qilin-Med-VL using the following commands:
+```
+python -m llava.serve.cli \
+    --model-path williamliu/Qilin-Med-VL-Chat \
+    --image-file "playground/figures/PMC8253873_Fig6_46.jpg" \
+    --load-4bit
+```
+![overview](docs/demo.gif)
 
 ## Cite Us
 ```
@@ -50,7 +71,6 @@ We have open-sourced the weights of the Qilin-Med-VL model, which can be downloa
   url={https://arxiv.org/abs/2310.17956}
 }
 ```
-
 
 ## Acknowledgement
 

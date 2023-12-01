@@ -27,18 +27,10 @@ def load_image(image_file):
 def main(args):
     # Model
     disable_torch_init()
-
-    model_name = get_model_name_from_path(args.model_path)
+    model_name = 'llava-Qilin-Chat'
     tokenizer, model, image_processor, context_len = load_pretrained_model(args.model_path, args.model_base, model_name, args.load_8bit, args.load_4bit, device=args.device)
-
-    if 'llama-2' in model_name.lower():
-        conv_mode = "llava_llama_2"
-    elif "v1" in model_name.lower():
-        conv_mode = "llava_v1"
-    elif "mpt" in model_name.lower():
-        conv_mode = "mpt"
-    else:
-        conv_mode = "llava_v0"
+        
+    conv_mode = 'llava_v1'
 
     if args.conv_mode is not None and conv_mode != args.conv_mode:
         print('[WARNING] the auto inferred conversation mode is {}, while `--conv-mode` is {}, using {}'.format(conv_mode, args.conv_mode, args.conv_mode))
@@ -46,10 +38,7 @@ def main(args):
         args.conv_mode = conv_mode
 
     conv = conv_templates[args.conv_mode].copy()
-    if "mpt" in model_name.lower():
-        roles = ('user', 'assistant')
-    else:
-        roles = conv.roles
+    roles = conv.roles
 
     image = load_image(args.image_file)
     # Similar operation in model_worker.py
